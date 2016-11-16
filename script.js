@@ -1,6 +1,20 @@
 var operation = [];
 // var integer = "";
+var math_it_up = {
+    '+': function (x, y) { return x + y },
+    '-': function (x, y) { return x - y }
+    '*': function (x, y) { return x*y }
+    '/': function (x, y) { return x/y }
+}​​​​​​​;
+function countIt () {
+  for (i =0; i < operation.length; i++) {
+    if (operation[i].hasOwnProperty("*" || "-" || "/" || "-")) {
+      math_it_up[operation[i]](operation[i-1], operation [i+1])
+    }
+  }
+}
 
+math_it_up['+'](1, 2) == 3;
 $(document).ready(function () {
 
 $( "#0" ).click(function() {
@@ -99,7 +113,4 @@ $( "#equal" ).click(function() {
   console.log(result);
   $("#display").html(result);
 });
-
-
-
 });
