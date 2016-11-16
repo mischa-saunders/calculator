@@ -1,8 +1,47 @@
 var operation = [];
-
+// var integer = "";
 
 $(document).ready(function () {
 
+$( "#0" ).click(function() {
+  operation.push(0);
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#1" ).click(function() {
+  operation.push(1);
+  // integer += 1;
+  // console.log(integer);
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#2" ).click(function() {
+  operation.push(2);
+  // integer += 2;
+  // console.log(integer);
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#3" ).click(function() {
+  operation.push(3);
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#4" ).click(function() {
+  operation.push(4);
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#5" ).click(function() {
+  operation.push(5);
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#6" ).click(function() {
+  operation.push(6);
+  $("#display").html(operation);
+  console.log(operation);
+});
 $( "#7" ).click(function() {
   operation.push(7);
   $("#display").html(operation);
@@ -13,13 +52,44 @@ $( "#8" ).click(function  () {
   $("#display").html(operation);
   console.log(operation);
 });
+$( "#9" ).click(function  () {
+  operation.push(9);
+  $("#display").html(operation);
+  console.log(operation);
+});
 $( "#addition" ).click(function() {
   operation.push("+");
+
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#substraction" ).click(function() {
+  operation.push("-");
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#division" ).click(function() {
+  operation.push("/");
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#multiplication" ).click(function() {
+  operation.push("*");
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#dot" ).click(function() {
+  operation.push(".");
   $("#display").html(operation);
   console.log(operation);
 });
 $( "#AC" ).click(function() {
   operation = [0];
+  $("#display").html(operation);
+  console.log(operation);
+});
+$( "#CE" ).click(function() {
+  operation.pop();
   $("#display").html(operation);
   console.log(operation);
 });
