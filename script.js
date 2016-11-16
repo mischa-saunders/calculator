@@ -1,10 +1,16 @@
-var display = function(){
-  console.log(this);
-}
+var operation = [];
+//
+// document.addEventListener("click", getButton);
 
-document.addEventListener("click", function);
-
-
-function getButton() {
-  if ()
-}
+var test = document.getElementById("calculator");
+console.log(test);
+//
+// function whatClicked(evt) {
+//     alert(evt.target.id);
+// }
+//
+// test.addEventListener("click", whatClicked, false);
+//
+// function getButton() {
+// return
+// }
