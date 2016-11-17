@@ -4,14 +4,22 @@ var numbers = [];
 
 $(".button").click(function(){
   var buttonValue = $(this).attr("value");
-  if (buttonValue === "AC"){
+  if (buttonValue == "AC"){
     numbers = [];
     $("#display").html(initDisplay);
   }
 
-  else if (buttonValue === "CE"){
+  else if (buttonValue == "CE"){
     numbers.pop();
   }
+
+  // else if (numbers.length-1 === "+" || "-" || "/" || "*") {
+  //   if {buttonValue === "+" || "-" || "/" || "*") {
+  //     numbers.pop();
+  //   numbers.push(buttonValue);
+  //   $("#display").html(numbers);
+  //   }
+  // }
 
   else if (buttonValue != "="){
     numbers.push(buttonValue);
